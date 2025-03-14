@@ -1,0 +1,426 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of css reset ------- */
+
+*{box-sizing: border-box;}
+
+
+
+@font-face {
+    font-family: nissan;
+    src: url(./assets/fonts/nissan/nissanbrand_regular.otf);
+  
+}
+
+@font-face {
+    font-family: nissan-bold;
+    src: url(./assets/fonts/nissan/nissanbrand_bold.otf);
+}
+
+/* HERO------- */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/imgs/PNG/NFSUB_Garage_Nissan_350Z2006.jpg);
+    background-size: cover; 
+    background-position: center; /* Centra la imagen */
+}
+
+.title{
+    width: 60%;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+
+
+}
+
+h1{
+    z-index: 1;
+    display: flex;
+    color: white;
+   
+   
+}
+
+.tp1{
+    font-family: nissan;
+    font-size: 85px;
+    line-height: 0%;
+    
+}
+
+.tp2{
+   font-family: nissan-bold; 
+   font-size: 200px;
+   margin-left: -30%;
+   color: red;
+}
+
+/* end hero section ------- */
+
+/* DESCRIPTION------- */
+
+.description{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 50vh;
+  
+}
+
+.h-description{
+    width: 40;
+
+}
+
+.dh1{
+    font-size: 20px;
+    font-family: nissan;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.dh2{
+    font-size: 40px;
+    font-family: nissan-bold;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.block-spacer{
+    width: 10%;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.pdescription{
+    width: 40%;
+    font-family: nissan;
+}
+
+/* end of description ------- */
+
+/* SPECS------- */
+
+.specs_box_container{
+    font-family: nissan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededee;
+    height: 50vh;
+    flex-direction: column;
+}
+
+.sbch{
+    font-size: 30px;
+    font-family: nissan-bold;
+}
+
+.specs_box{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.specs_box p{
+    width: 30%;
+    margin: 30px;
+
+}
+
+.spacer1{
+    width: 2px; /* Adjust for line thickness */
+    height: auto; /* Adjust for line length */
+    background-color: black; /* Or any color */
+    display: inline-block; /* Or block, depending on your layout */
+
+}
+
+.spacer2{
+    width: 2px; /* Adjust for line thickness */
+    height: auto; /* Adjust for line length */
+    background-color: black; /* Or any color */
+    display: inline-block; /* Or block, depending on your layout */
+}
+
+/* end of specs ------- */
+/*photobox1------*/
+
+.photo-box1{
+    width: 100%;
+    height: 65vh;
+    background-image: url(assets/imgs/176b20e8794ab9cba3b11fbd21828811\ copy.jpg);
+    background-size: cover; 
+    background-position: center; /* Centra la imagen */
+}
+
+/* FEATURES------- */
+
+.features{
+    font-family: nissan;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-container{
+    width: 70%;
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+}
+/* FEATURES TITLES ------- */
+.f-titles{
+    margin-bottom: 50px;
+}
+
+.ftitle1{
+    font-size: 20px;
+}
+
+.ftitle2{
+    font-size: 40px;
+}
+
+.fp1{
+    justify-content: flex-start;
+}
+/* FEATURES BOXES------- */
+/* FBOX1------- */
+.features-box1{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: ;
+}
+
+.fb1-img{
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(assets/imgs/TopGear-Exhaust-Nissan-350Z-002-SQ-copy.jpg);
+  
+}
+
+.textbox-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+   
+}
+
+.fb1-textbox1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+   
+}
+
+.fb1-l1{
+    font-size: 40px;
+    font-family: nissan-bold;
+}
+
+.fb1-textbox2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+/* FBOX2------- */
+.f-container2{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fb2-textbox1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: ;
+    height: 100%;
+    width: 60%;
+    font-family: nissan-bold;
+    font-size: 40px;
+}
+
+.fb2-textbox2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    padding: 50px;
+}
+
+.fb2-img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(assets/imgs/2024-nissan-z-nismo-twin-turbo-v6-engine\ copy.jpg);
+}
+/* FBOX3------- */
+.features-box3{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:;
+}
+
+.fb3-img{
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(assets/imgs/ad4cc8210d895ab7886677f74f525d7c.jpg);
+  
+}
+
+.textbox-container3{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+   
+}
+
+.fb3-textbox1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+   
+}
+
+.fb3-l1{
+    font-size: 40px;
+    font-family: nissan-bold;
+}
+
+.fb3-textbox2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+/*photobox2------*/
+
+.photo-box2{
+    width: 100%;
+    height: 65vh;
+    background-image: url(assets/imgs/a857a2991c40c6da7a7fb44a4bd02fc8\ copy.jpg);
+    background-size: cover; 
+    background-position: center; /* Centra la imagen */
+}
+
+.fastAndFurious{
+    font-family: nissan;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fastAndFurious-container{
+    width: 70%;
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.ff-title{
+font-family: nissan-bold;
+font-size: 40px;
+}
